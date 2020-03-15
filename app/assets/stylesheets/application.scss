@@ -19,11 +19,13 @@
  @import 'base/variables';
  @import 'base/styles';
  @import 'base/grid';
- @import 'base/media';
- 
+
  @import 'components/buttons';
  @import 'components/rotating_words';
  @import 'components/space';
 
  @import 'patterns/navbar';
  @import 'patterns/hero';
+
+ @import 'base/tablet';
+ @import 'base/mobile';

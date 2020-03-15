@@ -2,21 +2,54 @@
   background: #333 image-url('jumping_hike.jpg') no-repeat center center/cover;
   height: 70vh;
   color: #fff;
+
+  .showcase-content {
+    text-align: center;
+    padding-top: 11%;
+
+    h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        }
+  }
 }
 
-#showcase .showcase-content {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  height: 100%; /* to center text in middle of image */
-  padding: 0 2rem;
-  /* Overlay */
-  position: absolute;
-  top: 20px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rbg(0,0,0,.4);
+@media(max-width: $tablet) {
+
+  #showcase {
+    height: 30vh;
+
+    .showcase-content {
+      text-align: center;
+      padding-top: 4%;
+
+      h1 {
+          font-size: 1.5rem;
+          line-height: 1.2;
+          }
+      .lead {
+        font-size: 1.2rem
+      }
+    }
+  }
+}
+
+@media(max-width: $phone) {
+
+  #showcase {
+    height: 30vh;
+
+    .showcase-content {
+      text-align: center;
+      padding-top: 4%;
+
+      h1 {
+          font-size: 1.3rem;
+          line-height: 1.2rem;
+          }
+      .lead {
+        font-size: 1rem
+      }
+    }
+  }
 }

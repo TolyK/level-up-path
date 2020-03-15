@@ -1,0 +1,41 @@
+// $phone: 500px;
+
+@media(max-width: $phone) {
+  .col-sm {
+    &-1 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    &-6 {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    &-12 {
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
+
+  // #showcase {
+  //   height: 30vh;
+  //
+  //   .showcase-content {
+  //     text-align: center;
+  //     padding-top: 4%;
+  //
+  //     h1 {
+  //         font-size: 1.2rem;
+  //         line-height: 1.2;
+  //         }
+  //     .lead {
+  //       font-size: 1rem
+  //     }
+  //   }
+  // }
+}
