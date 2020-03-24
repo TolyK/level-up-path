@@ -1,11 +1,12 @@
-<nav id="navbar">
-  <h1 class="logo">
-    <%= link_to root_path do %>
-      Level Up <span class="text-primary">Path</span>
-    <% end %>
-  </h1>
-  <ul>
-    <li><%= link_to "Sign Up", '#' %></li>
-    <li><%= link_to "About", welcome_about_path %></li>
-  </ul>
-</nav>
+<header>
+  <nav id="navbar">
+    <ul>
+      <li id="title">
+        <%= link_to root_path do %>
+          LevelUp<span class="text-primary">Path</span>
+        <% end %>
+      </li>
+      <li><%= link_to "Sign Up", '#' %></li>
+    </ul>
+  </nav>
+</header>
