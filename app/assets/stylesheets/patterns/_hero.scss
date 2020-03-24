@@ -1,55 +1,46 @@
-#showcase {
-  background: #333 image-url('jumping_hike.jpg') no-repeat center center/cover;
-  height: 70vh;
-  color: #fff;
 
-  .showcase-content {
-    text-align: center;
-    padding-top: 11%;
+.hero {
+  display: flex;
+  background: $bg-image no-repeat center center/cover;
+  height: 80vh;
 
-    h1 {
-        font-size: 2rem;
-        line-height: 1.2;
-        }
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  color: white;
+
+  h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+
+  }
+
+  .btn {
+    // width: 150px;
+    font-size: 1.2em;
+    padding: 1em;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media(max-width: $tablet) {
+  .hero {
+    h1 {
+      font-size: 1.5em;
 
-  #showcase {
-    height: 30vh;
-
-    .showcase-content {
-      text-align: center;
-      padding-top: 4%;
-
-      h1 {
-          font-size: 1.5rem;
-          line-height: 1.2;
-          }
-      .lead {
-        font-size: 1.2rem
-      }
     }
   }
+
 }
 
-@media(max-width: $phone) {
-
-  #showcase {
-    height: 30vh;
-
-    .showcase-content {
-      text-align: center;
-      padding-top: 4%;
-
-      h1 {
-          font-size: 1.3rem;
-          line-height: 1.2rem;
-          }
-      .lead {
-        font-size: 1rem
-      }
-    }
-  }
-}
+// @media(max-width: $phone) {
+//   .hero {
+//     h1 {
+//       font-size: 1.5em;
+//     }
+//   }
+// }
