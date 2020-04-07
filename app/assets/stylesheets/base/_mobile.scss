@@ -21,4 +21,14 @@
       grid-template-columns: repeat(12, 1fr);
     }
   }
+
+  .column {
+    // 2 columns
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  #navbar ul #title {
+    font-size: 1.5em;
+  }
 }

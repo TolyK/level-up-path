@@ -1,6 +1,7 @@
 #navbar {
   width: 100%;
-  position: absolute;
+  // position: absolute;
+  position: fixed;
   z-index: 100;
 
   ul {
@@ -21,7 +22,7 @@
 
     #title {
       margin-right: auto;
-      font-size: 1.2em;
+      font-size: 3em;
     }
 
     .btn {
