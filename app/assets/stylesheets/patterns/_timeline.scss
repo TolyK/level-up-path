@@ -7,63 +7,65 @@ main #timeline {
   // width: 90%;
 }
 
-p {
-  font-size: 1em;
-  line-height: 1.75em;
-  border-top: 3px solid;
-  border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
-  border-image-slice: 1;
-  border-width: 3px;
-  margin: 0;
-  padding: 40px;
-  counter-increment: section;
-  position: relative;
-  color: $black;
-
-  //numbers
-  &:before {
-    content: counter(section);
-    position: absolute;
-    border-radius: 50%;
-    padding-top: 12.5px;
-    height: 2.75em;
-    width: 2.75em;
-    background-color: $black;
-    text-align: center;
-    line-height: 1.25em;
-    color: $white;
+#timeline {
+  p {
     font-size: 1em;
-  }
-}
-//odd number borders
-p:nth-child(odd) {
-  border-right: 3px solid;
-  padding-left: 0;
+    line-height: 1.75em;
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+    border-image-slice: 1;
+    border-width: 3px;
+    margin: 0;
+    padding: 40px;
+    counter-increment: section;
+    position: relative;
+    color: $black;
 
-  &:before {
-    left: 100%;
-    margin-left: -20px;
+    //numbers
+    &:before {
+      content: counter(section);
+      position: absolute;
+      border-radius: 50%;
+      padding-top: 12.5px;
+      height: 2.75em;
+      width: 2.75em;
+      background-color: $black;
+      text-align: center;
+      line-height: 1.25em;
+      color: $white;
+      font-size: 1em;
+    }
   }
-}
-//even number borders
-p:nth-child(even) {
-  border-left: 3px solid;
-  padding-right: 0;
+  //odd number borders
+  p:nth-child(odd) {
+    border-right: 3px solid;
+    padding-left: 0;
 
-  &:before {
-    right: 100%;
-    margin-right: -20px;
+    &:before {
+      left: 100%;
+      margin-left: -20px;
+    }
   }
-}
-//handle first and last
-p:first-child {
-  border-top: 0;
-  border-top-right-radius:0;
-  border-top-left-radius:0;
-}
-p:last-child {
-  border-bottom-right-radius:0;
-  border-bottom-left-radius:0;
+  //even number borders
+  p:nth-child(even) {
+    border-left: 3px solid;
+    padding-right: 0;
+
+    &:before {
+      right: 100%;
+      margin-right: -20px;
+    }
+  }
+  //handle first and last
+  p:first-child {
+    border-top: 0;
+    border-top-right-radius:0;
+    border-top-left-radius:0;
+  }
+  p:last-child {
+    border-bottom-right-radius:0;
+    border-bottom-left-radius:0;
+  }
 }
 
 @media(max-width: $tablet) {

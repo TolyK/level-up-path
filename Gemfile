@@ -24,6 +24,11 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'devise', '~> 4.7', '>= 4.7.1'
+
+# for readline errors
+gem 'rb-readline', '~> 0.5.5'
+
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :production do
