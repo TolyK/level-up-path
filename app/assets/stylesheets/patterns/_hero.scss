@@ -37,6 +37,38 @@
 
 }
 
+
+.hero2 {
+  display: flex;
+  background: $bg-image no-repeat center center/cover;
+  // height: 100vh;
+
+
+  justify-content: center;
+  align-items:flex-start;
+  text-align: center;
+
+
+  color: white;
+
+  h3 {
+    padding-top: 70px;
+    margin-bottom: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%); /* precise centering; see link below */
+    color: $primary-color;
+    font-size: 1.5em;
+  }
+
+  // h1 {
+  //   font-size: 2.5em;
+  //   margin-top: 0;
+  //   margin-bottom: 0.5em;
+  //
+  // }
+}
+//
 // @media(max-width: $phone) {
 //   .hero {
 //     h1 {
