@@ -5,9 +5,19 @@
   padding: .5rem 2rem;
   border: none;
   border-radius: 5px;
-}
 
-.btn:hover {
-  background: $secondary-green;
-  // color: light-grey;
+  &:hover {
+    background: $primary-color;
+    // color: light-grey;
+  }
+
+  &-danger {
+    background: red;
+    // padding: .3rem 1rem;
+    font-size: 75%;
+  }
+
+  &-small {
+    padding: .3rem 1rem;
+  }
 }

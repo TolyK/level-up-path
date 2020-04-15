@@ -1,0 +1,85 @@
+.form:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+
+  display: block;
+  background-color: black;
+  // background-image: $bg-image;
+  background: $bg-image no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  // background-size: cover;
+
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.form {
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto;
+
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 499px;
+  height: 499px;
+
+  background-color: rgba(10, 10, 10, 0.5);
+  margin: auto auto;
+  padding: 25px;
+  border-radius: 4px;
+  box-shadow: (0 0 10px rgba(0,0,0,1));
+
+  &-large {
+    height: 700px;
+  }
+
+  h2, p, li, a {
+    color: white;
+  }
+
+  .field {
+    padding: 10px;
+    color: white;
+    a {
+      color: white;
+    }
+  }
+
+  * {
+    // color: white;
+  }
+
+  .form-control {
+    outline: none;
+    box-shadow: none;
+    width: 350px;
+    &:hover {
+      border-color: $primary-color;
+    }
+  }
+
+  .danger-zone {
+    margin-top: -50px;
+  }
+}
+
+@media(max-width: $phone) {
+  .form {
+    width: 100vw;
+  }
+
+  .form-control {
+    width: 250px;
+  }
+}
