@@ -14,7 +14,7 @@
     margin: 0;
 
     a {
-      color: $dark-green;
+      color: $primary-color;
       text-decoration: none;
     }
 
@@ -22,13 +22,13 @@
       margin: 20px;
     }
 
-    li {
-      color: $primary-color
-    }
-
     #title {
       margin-right: auto;
       font-size: 3em;
+    }
+
+    #title a {
+      color: $dark-green;
     }
 
     .btn {
@@ -41,5 +41,5 @@
 nav.scroll {
   background-color: #fff;
   transition: background-color 300ms linear;
-  height: 85px;
+  height: 90px;
 }
