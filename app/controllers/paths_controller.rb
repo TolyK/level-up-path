@@ -30,7 +30,7 @@ class PathsController < ApplicationController
   def update
     @path = Path.find(params[:id])
     if @path.update_attributes(params.require(:path).permit(:title, :description, :header_image))
-      flash[:notice] = "Path updates!"
+      flash[:notice] = "Path updated!"
       redirect_to @path
     else
       flash[:error] = "Oops something went wrong"

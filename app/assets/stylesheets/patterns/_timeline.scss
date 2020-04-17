@@ -75,3 +75,12 @@ main #timeline {
       margin: auto;
     }
   }
+
+
+  @media(max-width: $phone) {
+      main #timeline {
+        min-width: 250px;
+        max-width: 250px;
+        margin: auto;
+      }
+    }

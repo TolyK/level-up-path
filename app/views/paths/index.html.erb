@@ -1,9 +1,16 @@
 
 <div class="grid">
   <div class="my-3"></div>
-  <h1>all paths</h1>
-  <% @paths.each do |path| %>
-    <h2><%= link_to path.title, path %></h2>
-    <p><%= link_to path.description, path %></p>
-  <% end %>
+  <h1 class="center">All Paths</h1>
+
+  <div class="grid col-6 col-md-3 col-sm-2">
+
+      <% @paths.each do |path| %>
+          <figure class="px-1">
+            <%= link_to image_tag("#{path.header_image}"), path %>
+            <figcaption><%= link_to path.title, path %></figcaption>
+          </figure>
+
+      <% end %>
+  </div>
 </div>

@@ -54,6 +54,10 @@ img {
     object-fit:cover;
 }
 
+.grid .col-2-1 img {
+  height:400px;
+}
+
 .card {
   display: flex;
   height: 25vh;
@@ -62,6 +66,10 @@ img {
   justify-content: center;
   text-align: center;
   padding: 25px;
+}
+
+figure {
+  background: no-repeat center center fixed;
 }
 
 figcaption {
@@ -76,4 +84,30 @@ figcaption {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.center-xy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-fixed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content-wrapper {
+  display: flex;
+  width: 90vw;
+  padding: 10px;
+  a {
+    color: $primary-color;
+  }
+}
+
+.grid .content-wrapper a {
+  color: $primary-color;
 }

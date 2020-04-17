@@ -20,6 +20,27 @@
   }
 }
 
+.px {
+  &-1 {
+    padding:0  1rem;
+  }
+  &-2 {
+    padding:0  2rem;
+  }
+  &-3 {
+    padding:0  3rem;
+  }
+  &-4 {
+    padding:0  4rem;
+  }
+  &-5 {
+    padding:0  5rem;
+  }
+  &-10 {
+    padding: 0 10rem;
+  }
+}
+
 // Margin
 .my {
   &-1 {
