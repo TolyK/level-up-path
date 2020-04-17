@@ -23,6 +23,7 @@
 }
 
 .form {
+
   position: absolute;
   display: grid;
   grid-template-columns: auto;
@@ -35,10 +36,12 @@
   height: 499px;
 
   background-color: rgba(10, 10, 10, 0.5);
-  margin: auto auto;
+  // margin: auto auto;
+  margin: 90px auto auto auto;
   padding: 25px;
   border-radius: 4px;
   box-shadow: (0 0 10px rgba(0,0,0,1));
+  // margin-top: 100px;
 
   &-large {
     height: 700px;

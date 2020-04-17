@@ -1,0 +1,9 @@
+
+<div class="grid">
+  <div class="my-3"></div>
+  <h1>all paths</h1>
+  <% @paths.each do |path| %>
+    <h2><%= link_to path.title, path %></h2>
+    <p><%= link_to path.description, path %></p>
+  <% end %>
+</div>

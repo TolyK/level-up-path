@@ -1,0 +1,8 @@
+<div class="grid">
+  <div class="my-3"></div>
+  <h1><%= @path.title %></h1>
+  <p class='lead'><%= @path.description %></p>
+
+  <%= link_to "Edit", edit_path_path(@path) %>
+  <%= link_to "Delete", @path, method: :delete, class: "btn btn-danger" %>
+</div>
